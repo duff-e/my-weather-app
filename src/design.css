@@ -34,6 +34,11 @@ header {
   margin-left: 5px;
 }
 
+.weather-data {
+  display: flex;
+  justify-content: space-between;
+}
+
 footer {
   border-top: 1px solid #ececec;
   padding: 20px 0;
