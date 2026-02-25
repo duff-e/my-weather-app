@@ -1,5 +1,5 @@
 body {
-  background-color: #cbe6ef;
+  background-color: #daedf4;
   font-family: Cabin;
 }
 
@@ -11,5 +11,20 @@ body {
   border-radius: 10px;
 }
 
-h1 {
+.search-input {
+  background: #daedf4;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  padding: 15px;
+  width: 80%;
+}
+
+.submit-button {
+  background: #80c2d8;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  padding: 15px 25px;
+  margin-left: 5px;
 }
