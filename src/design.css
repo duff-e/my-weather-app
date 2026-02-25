@@ -13,7 +13,11 @@ body {
 
 header {
   border-bottom: 1px solid #ececec;
-  padding: 20px 0;
+  padding: 0 0 30px 0;
+}
+
+main {
+  margin: 30px 0;
 }
 
 .search-input {
@@ -40,7 +44,7 @@ header {
 }
 
 .current-city {
-  font-size: 50px;
+  font-size: 45px;
   margin: 0;
 }
 
@@ -52,6 +56,24 @@ header {
 
 .current-details strong {
   color: red;
+}
+
+.current-weather-icon {
+  position: relative;
+  top: -2px;
+  font-size: 65px;
+}
+
+.current-temperature {
+  font-size: 88px;
+  line-height: 88px;
+  font-weight: bold;
+}
+
+.current-temperature-unit {
+  position: relative;
+  top: -40px;
+  font-size: 30px;
 }
 
 footer {
