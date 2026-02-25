@@ -1,3 +1,15 @@
 body {
-  background-color: blue;
+  background-color: #cbe6ef;
+  font-family: Cabin;
+}
+
+.weather-app {
+  background-color: white;
+  max-width: 600px;
+  margin: 20px auto;
+  padding: 30px;
+  border-radius: 10px;
+}
+
+h1 {
 }
