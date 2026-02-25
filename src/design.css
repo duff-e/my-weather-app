@@ -1,6 +1,6 @@
 body {
   background-color: #daedf4;
-  font-family: Cabin;
+  font-family: "SN Pro";
 }
 
 .weather-app {
@@ -37,6 +37,21 @@ header {
 .weather-data {
   display: flex;
   justify-content: space-between;
+}
+
+.current-city {
+  font-size: 50px;
+  margin: 0;
+}
+
+.current-details {
+  font-size: 18px;
+  line-height: 1.5;
+  color: rgba(39, 33, 66, 0.4);
+}
+
+.current-details strong {
+  color: red;
 }
 
 footer {
