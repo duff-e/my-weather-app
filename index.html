@@ -10,6 +10,7 @@
       href="https://fonts.googleapis.com/css2?family=SN+Pro:ital,wght@0,200..900;1,200..900&display=swap"
       rel="stylesheet"
     />
+    <script src="https://cdn.jsdelivr.net/npm/axios@1.13.2/dist/axios.min.js"></script>
     <title>Weather App</title>
   </head>
   <body>
@@ -36,8 +37,10 @@
             </p>
           </div>
           <div class="current-weather">
-            <span class="current-weather-icon">☁️</span>
-            <span class="current-temperature">17</span
+            <span class="current-weather-icon" id="current-weather-icon"
+              >☁️</span
+            >
+            <span class="current-temperature" id="current-temperature">17</span
             ><span class="current-temperature-unit">°C</span>
           </div>
         </div>
