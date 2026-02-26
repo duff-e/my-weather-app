@@ -60,7 +60,7 @@ main {
 
 .current-weather-icon {
   position: relative;
-  top: -2px;
+  top: 30px;
   font-size: 65px;
 }
 
@@ -81,4 +81,5 @@ footer {
   padding: 20px 0;
   font-size: 14px;
   text-align: center;
+  color: rgba(39, 33, 66, 0.4);
 }

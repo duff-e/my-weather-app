@@ -29,18 +29,22 @@
       <main>
         <div class="weather-data">
           <div>
-            <h1 class="current-city" id="current-city">Madrid</h1>
+            <h1 class="current-city" id="current-city"></h1>
             <p class="current-details">
-              Monday 10:35, fog
+              <span id="time"></span>,
+              <span id="description"></span>
               <br />
-              Humidity: <strong>43%</strong>, Wind: <strong>2.75km/h</strong>
+              Humidity: <strong id="humidity"></strong>, Wind:
+              <strong id="wind"></strong>
             </p>
           </div>
           <div class="current-weather">
             <span class="current-weather-icon" id="current-weather-icon"
-              >☁️</span
-            >
-            <span class="current-temperature" id="current-temperature">17</span
+              ><img
+                src="http://shecodes-assets.s3.amazonaws.com/api/weather/icons/clear-sky-day.png"
+              />
+            </span>
+            <span class="current-temperature" id="current-temperature"></span
             ><span class="current-temperature-unit">°C</span>
           </div>
         </div>
