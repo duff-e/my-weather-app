@@ -12,28 +12,28 @@ function searchCity(city) {
 }
 
 function updateWeather(response) {
-  let updatedTemperature = document.querySelector("#current-temperature");
+  let temperatureElement = document.querySelector("#current-temperature");
   let temperature = response.data.temperature.current;
-  updatedTemperature.innerHTML = Math.round(temperature);
+  temperatureElement.innerHTML = Math.round(temperature);
 
-  let updatedCity = document.querySelector("#current-city");
-  updatedCity.innerHTML = response.data.city;
+  let cityElement = document.querySelector("#current-city");
+  cityElement.innerHTML = response.data.city;
 
-  let updatedDescription = document.querySelector("#description");
-  updatedDescription.innerHTML = response.data.condition.description;
+  let descriptionElement = document.querySelector("#description");
+  descriptionElement.innerHTML = response.data.condition.description;
 
-  let updatedHumidity = document.querySelector("#humidity");
-  updatedHumidity.innerHTML = `${response.data.temperature.humidity}%`;
+  let humidityElement = document.querySelector("#humidity");
+  humidityElement.innerHTML = `${response.data.temperature.humidity}%`;
 
-  let updatedWind = document.querySelector("#wind");
-  updatedWind.innerHTML = `${response.data.wind.speed}m/s`;
+  let windSpeedElement = document.querySelector("#wind");
+  windSpeedElement.innerHTML = `${response.data.wind.speed}m/s`;
 
-  let updatedTime = document.querySelector("#time");
+  let timeElement = document.querySelector("#time");
   let date = new Date(response.data.time * 1000);
-  updatedTime.innerHTML = formatDate(date);
+  timeElement.innerHTML = formatDate(date);
 
-  let updatedIcon = document.querySelector("#current-weather-icon");
-  updatedIcon.innerHTML = `<img src="${response.data.condition.icon_url}">`;
+  let iconElement = document.querySelector("#current-weather-icon");
+  iconElement.innerHTML = `<img src="${response.data.condition.icon_url}">`;
 }
 
 function formatDate(date) {
@@ -53,6 +53,10 @@ function formatDate(date) {
 
   if (minutes < 10) {
     minutes = `0${minutes}`;
+  }
+
+  if (hours < 10) {
+    hours = `0${hours}`;
   }
 
   return `${day} ${hours}:${minutes} `;
