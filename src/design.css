@@ -91,14 +91,18 @@ main {
 }
 
 .weather-forecast-icon {
-  font-size: 40px;
+  width: 70px;
   text-align: center;
 }
 
 .weather-forecast-temperatures {
   display: flex;
-  justify-content: space-between;
+  text-align: center;
   color: #f65282;
+}
+
+.weather-forecast-temperature {
+  padding: 0 10px;
 }
 
 a {
