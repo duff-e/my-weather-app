@@ -97,16 +97,8 @@ main {
 
 .weather-forecast-temperatures {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   color: #f65282;
-}
-
-.weather-forecast-temperature-high {
-  padding-left: 20px;
-}
-
-.weather-forecast-temperature {
-  padding: 10px;
 }
 
 a {
